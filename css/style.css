@@ -1,0 +1,110 @@
+/* Definição de fontes */
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Desktop */
+body {
+    background-color: #0E1014;
+    color: white;
+}
+
+header img {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1 {
+    font-size: 64pt;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+p {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto 0 auto;
+}
+
+a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    weight: 792px;
+    height: 446px;
+}
+
+@media(max-width: 768px) {
+    header img {
+        margin: 65px 0 0 60px
+    }
+    p {
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+        width: 340px;
+    }
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
